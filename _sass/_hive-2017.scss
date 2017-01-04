@@ -11,3 +11,26 @@ html, body, #main {
   bottom: 0;
   width: 100%;
 }
+
+#announcement {
+  @include make-md-column(8);
+  @include make-md-column-offset(2);
+
+  p {
+    text-align: left;
+  }
+
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  .conference-details {
+    span {
+      display: block;
+    }
+  }
+
+  .deadline {
+    font-weight: bold;
+  }
+}
